@@ -1,0 +1,304 @@
+body {
+	background: rgb(2, 0, 36);
+	background: linear-gradient(
+		90deg,
+		112.77deg,
+		rgba(255, 255, 255, 0.03) 4.21%,
+		rgba(255, 255, 255, 0.129427) 70.54%,
+		rgba(255, 255, 255, 0.13) 91.54%
+	);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+form {
+	height: 630px;
+}
+
+.card-title {
+	text-decoration: none;
+}
+
+.navbar {
+	height: 100px;
+	background: rgb(2, 0, 36);
+	position: relative;
+}
+
+.card-body {
+	background: #101118;
+	text-decoration: none;
+}
+
+.card-movie-list:hover {
+	animation: pulse;
+	animation-duration: 0.5s;
+}
+
+.card-movie-slider:hover {
+	animation: pulse;
+	animation-duration: 0.5s;
+}
+
+.detail-btn-slider {
+	top: 0px;
+	text-decoration: none;
+	text-decoration: none;
+	box-shadow: none;
+	text-transform: uppercase;
+	font-size: 20px;
+	text-shadow: black 10px;
+	padding: 10px 20px;
+	background-color: black;
+	color: white;
+	background: black;
+	opacity: 0.8;
+	position: absolute;
+	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+
+.card-movie-slider:hover .detail-btn-slider {
+	display: flex;
+	color: white;
+}
+
+.card-text-movie {
+	height: 100px;
+}
+
+.bi-bookmark-star-fill {
+	color: slategray;
+}
+
+.bi-bookmark-star-fill:hover {
+	color: crimson;
+}
+
+.bi-bookmark-star-fill:active {
+	color: crimson;
+}
+
+.favorite-btn {
+	width: 40px;
+	height: 40px;
+	right: 10px;
+	top: 10px;
+	font-size: 30px;
+	background: none;
+	position: absolute;
+	align-items: center;
+	border: none;
+	display: flex;
+	justify-content: center;
+}
+
+.detail-btn {
+	width: 306px;
+	height: 500px;
+	top: 0px;
+	text-decoration: none;
+	text-decoration: none;
+	box-shadow: none;
+	text-transform: uppercase;
+	font-size: 20px;
+	text-shadow: black 10px;
+	padding: 10px 20px;
+	background-color: black;
+	color: white;
+	background: black;
+	opacity: 0.8;
+	position: absolute;
+	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+
+.card-movie-list:hover .detail-btn {
+	display: flex;
+	color: whitesmoke;
+}
+
+.realese-date {
+	width: 50px;
+	height: 30px;
+	right: 10px;
+	margin-top: 460px;
+	position: absolute;
+	align-items: center;
+	background-color: rgb(127, 163, 255);
+	border-radius: 100px;
+	display: flex;
+	justify-content: center;
+	border: none;
+}
+
+.rate-star {
+	width: 50px;
+	height: 30px;
+	left: 10px;
+	margin-top: 460px;
+	position: absolute;
+	align-items: center;
+	border-radius: 100px;
+	display: flex;
+	justify-content: center;
+	border: none;
+}
+
+.form-control {
+	width: 400px;
+	border-radius: 0px;
+	border: none;
+	border-bottom: 1px solid;
+	border-color: grey;
+}
+
+input.form-control:focus {
+	border-color: blueviolet;
+	box-shadow: none;
+}
+input.form-control:hover {
+	border-color: blueviolet;
+	box-shadow: none;
+}
+input.form-control:active {
+	border-color: blueviolet;
+}
+
+.btn-search {
+	display: none;
+}
+
+.spinner-container {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	height: 350px;
+}
+
+.spinner-border {
+	margin-top: 150px;
+	width: 150px;
+	height: 150px;
+	color: blueviolet;
+}
+
+.spinner-title {
+	margin-top: 40px;
+	margin-bottom: 350px;
+}
+
+.favorite-title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 220px;
+	margin-bottom: 425px;
+}
+
+.swiper-slider {
+	height: 470px;
+}
+
+.swiper-carrousel {
+	height: 650px;
+}
+
+.img-carrousel {
+	aspect-ratio: 2/1;
+}
+
+.card-title-carrousel {
+	text-transform: uppercase;
+	font-size: 50px;
+	font-weight: 600;
+	font-weight: bolder;
+}
+
+.button-wrapper {
+	position: relative;
+}
+
+.button {
+	display: block;
+	font-size: 15px;
+	line-height: 32px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 10px 20px;
+	background-color: black;
+	color: white;
+	border-radius: 50px;
+	border: 0px;
+}
+
+.button-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	background: linear-gradient(
+		90deg,
+		#ff8038 0%,
+		#ff0099 30.43%,
+		#00ebeb 68.23%,
+		#db00ff 100%
+	);
+	background-size: 600% 600%;
+	border-radius: 50px;
+	animation: AnimateBorder 4s ease infinite;
+	-webkit-animation: AnimateBorder 4s ease infinite;
+	-moz-animation: AnimateBorder 4s ease infinite;
+	z-index: -1;
+	transform: translate(-2px, -2px);
+	transition: filter 1s ease-in;
+}
+
+.button-wrapper:hover .button-bg {
+	filter: blur(10px);
+	transition: filter 0.4s ease-in;
+}
+
+@-webkit-keyframes AnimateBorder {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@-moz-keyframes AnimateBorder {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@keyframes AnimateBorder {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
